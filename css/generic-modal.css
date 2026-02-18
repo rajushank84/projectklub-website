@@ -1,0 +1,132 @@
+.generic-modal {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  background-color: rgba(0, 0, 0, .75);
+  padding: 40px;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.generic-modal.open {
+  display: block;
+}
+
+.generic-modal-body {
+  position: fixed;
+  background: #fff;
+  overflow: auto;
+  width: 500px;
+  max-width: calc(100vw - 16px);
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+body.generic-modal-open,
+html.generic-modal-open {
+  overflow: hidden;
+}
+
+.generic-modal .modal-header {
+  position: relative;
+  background-color: #2F497B;
+  padding: 8px 16px;
+  margin-top: -1px;
+}
+
+.generic-modal .modal-header h2 {
+  color: #fff;
+  text-transform: unset;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.generic-modal .close-modal {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 16px;
+  top: 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.generic-modal .modal-body {
+  border: 1px solid #212529;
+  border-top: none;
+  padding: 24px 16px;
+}
+
+.login-modal .modal-body p {
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 24px;
+  color: #555;
+}
+
+.login-modal .signup-sections {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 12px;
+}
+
+.login-modal .onboarding-section {
+  width: 50%;
+  text-align: center;
+}
+
+.login-modal .onboarding-section  p {
+  font-weight: bold;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #000;
+}
+
+.login-modal .signup-section {
+  border-right: 1px solid #e0e0e0;
+}
+
+.login-modal .link-container {
+  display: inline-block;
+}
+
+.login-modal .link-container a {
+  color: #555;
+  padding: 8px 12px;
+  background: #e5e5e5;
+  border-radius: 4px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: bold;
+}
+
+.login-modal .link-container a.primary {
+  background: #2C7EF4;
+  color: #fff;
+}
+
+@media (max-width: 480px) {
+ .login-modal .signup-sections {
+    flex-direction: column;
+  }
+
+  .login-modal .onboarding-section {
+    width: 100%;
+  }
+
+  .login-modal .signup-section {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 24px;
+  }
+
+  .login-modal .login-section {
+    padding-top: 24px;
+  }
+}

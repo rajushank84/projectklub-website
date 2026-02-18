@@ -1,0 +1,30 @@
+.policy-page {
+  padding: 108px 36px 0;
+}
+
+.policy-page h1 {
+  margin-bottom: 16px;
+  font-size: 30px;
+}
+
+.policy-page h2 {
+  margin: 24px 0 4px;
+}
+
+.policy-page p {
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.policy-page ul,
+.policy-page ol {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.policy-page .main-footer {
+  justify-content: flex-start;
+  flex-direction: row;
+  padding: 0;
+}
