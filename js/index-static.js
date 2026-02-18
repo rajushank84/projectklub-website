@@ -167,6 +167,6 @@ window.addEventListener('load', function() {
   };
 })();
 
-window.addEventListener('load', function() {
-  openModal('modal-2');
-});
+// window.addEventListener('load', function() {
+//   openModal('modal-2');
+// });
